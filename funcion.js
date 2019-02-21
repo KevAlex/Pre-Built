@@ -16,38 +16,46 @@ function mover(obj) {
 		posicion = elemento.getBoundingClientRect();
 
 		console.log("izq " + posicion.right);
+		if(posicion.left< ){
+			ship.style.left=
+		}
 		break;
 
 		case 38 : /Up key/
 
-		ship.style.top = situacionX-220+"px" ;
+		ship.style.top = situacionX-210+"px" ;
 		
 		posicion = elemento.getBoundingClientRect();
 
-		//alert(posicion.top);
+		console.log(posicion.top);
 		break;
 		case 39 :  /Der key/ 
-		ship.style.left = situacionY-190+"px" ;
+		ship.style.left = situacionY-170+"px" ;
 		
 		posicion = elemento.getBoundingClientRect();
 
 		console.log(posicion.right);
-		if (posicion.right>400) {
+		if (posicion.right>600) {
 
 			ship.style.left= 8+"px";
 
 		}
 		break;
 		case 40 : /down key/
-		ship.style.top = situacionX-180+"px" ;
+		ship.style.top = situacionX-170+"px" ;
 		
 		posicion = elemento.getBoundingClientRect();
+		if(posicion.top >380){
+			ship.style.top = 330+ "px";
+		
+		}
 
-		//alert(posicion.top);
+		console.log(posicion.top);
 		break;
 	//	default :alert("Se ha equivocado, debe pulsar las flechas del teclado");
 	
 }
 }
 
+	
 
